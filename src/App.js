@@ -1,7 +1,7 @@
 import './styles/App.css';
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
-import { Media } from 'react-bootstrap'
+import Media from 'react-bootstrap/Media'
 
 function App() {
 
@@ -15,11 +15,11 @@ function App() {
   })
 
   const listStudents = data.map((students) => (
-    <Media key={students.id}>
+    <Media key={students.id} className="media">
       <img
-        width={64}
-        height={64}
-        className="mr-3"
+        width={200}
+        height={200}
+        className="align-self-start mr-3 student-image"
         src={students.pic}
         alt={students.firstName}
       />
