@@ -1,10 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
+import './styles/App.css';
 
 function App() {
   return (
     <div className="App">
-
+      placeholder
     </div>
   );
 }
