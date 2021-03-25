@@ -24,7 +24,7 @@ function App() {
         alt={students.firstName}
       />
       <Media.Body>
-        <h5>{students.firstName}{students.lastName}</h5>
+        <h1>{students.firstName}{students.lastName}</h1>
         <p>Email: {students.email}</p>
         <p>Company: {students.company}</p>
         <p>Skill: {students.skill}</p>
