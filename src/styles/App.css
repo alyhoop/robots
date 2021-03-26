@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;800&display=swap');
 
-body {
-  background-color: rgb(231, 232, 241);
+h1 {
+  font-weight: bold!important;
 }
 
 .App {
   font-family: 'Raleway', sans-serif;
+  background-color: rgb(231, 232, 241);
 }
 
 .student-image {
@@ -14,7 +15,7 @@ body {
   background-color: white;
 }
 
-.media {
+.student-card {
   border: 1px solid grey;
   background-color: white;
   width: 75vw;

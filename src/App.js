@@ -1,7 +1,9 @@
 import './styles/App.css';
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
-import Media from 'react-bootstrap/Media'
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
@@ -16,22 +18,26 @@ function App() {
   })
 
   const listStudents = data.map((students) => (
-    <Media key={students.id} className="media">
-      <img
-        width={200}
-        height={200}
-        className="align-self-start mr-3 student-image"
-        src={students.pic}
-        alt={students.firstName}
-      />
-      <Media.Body>
-        <h1>{students.firstName}{students.lastName}</h1>
-        <p>Email: {students.email}</p>
-        <p>Company: {students.company}</p>
-        <p>Skill: {students.skill}</p>
-        <p>Average: {students.grades}</p>
-      </Media.Body>
-    </Media>
+    <Container>
+      <Row key={students.id} className="student-card">
+        <Col>
+        <img
+          width={200}
+          height={200}
+          className="align-self-start mr-3 student-image"
+          src={students.pic}
+          alt={students.firstName}
+        />
+        </Col>
+        <Col>
+          <h1>{students.firstName}{students.lastName}</h1>
+          <p>Email: {students.email}</p>
+          <p>Company: {students.company}</p>
+          <p>Skill: {students.skill}</p>
+          <p>Average: {students.grades}</p>
+        </Col>
+      </Row>
+    </Container>
   ));
 
   return (
