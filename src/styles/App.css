@@ -22,3 +22,7 @@ h1 {
   background-color: white;
   width: 75vw;
 }
+
+.list-group {
+  margin-left: 10%;
+}
