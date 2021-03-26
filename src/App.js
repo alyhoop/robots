@@ -20,7 +20,7 @@ function App() {
   const listStudents = data.map((students) => (
     <Container>
       <Row key={students.id} className="student-card">
-        <Col>
+        <Col lg={3}>
         <img
           width={200}
           height={200}
