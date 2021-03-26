@@ -17,4 +17,5 @@ body {
 .media {
   border: 1px solid grey;
   background-color: white;
+  width: 75vw;
 }
