@@ -2,6 +2,7 @@
 
 h1 {
   font-weight: bold!important;
+  text-transform: uppercase;
 }
 
 .App {

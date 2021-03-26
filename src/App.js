@@ -17,6 +17,10 @@ function App() {
     })
   })
 
+  const studentName = () => {
+    console.log(data)
+  }
+
   const listStudents = data.map((students) => (
     <Container>
       <Row key={students.id} className="student-card">
@@ -30,7 +34,7 @@ function App() {
         />
         </Col>
         <Col>
-          <h1>{students.firstName}{students.lastName}</h1>
+          <h1>{students.firstName} {students.lastName}</h1>
           <p>Email: {students.email}</p>
           <p>Company: {students.company}</p>
           <p>Skill: {students.skill}</p>
