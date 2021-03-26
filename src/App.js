@@ -18,9 +18,11 @@ function App() {
     })
   })
 
-  const studentName = () => {
-    console.log(data)
-  }
+  // const fullName = (data, students) => {
+  //   return students.firstName + ' ' + students.lastName
+  // }
+  //
+  //const mean = (array) => array.reduce((a, b) => a + b)
 
   const listStudents = data.map((students) => (
     <ListGroup as="ul" key={students.id}>
@@ -37,7 +39,7 @@ function App() {
               />
             </Col>
             <Col>
-              <h1>{students.firstName} {students.lastName}</h1>
+              <h1>{students.firstName}</h1>
               <p>Email: {students.email}</p>
               <p>Company: {students.company}</p>
               <p>Skill: {students.skill}</p>
